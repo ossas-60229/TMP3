@@ -200,7 +200,6 @@ uint64 sys_unlink(void) {
 bad:
     iunlockput(dp);
     end_op();
-    //printf("fuck this unlink %s\n", path);
     return -1;
 }
 
